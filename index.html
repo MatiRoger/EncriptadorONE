@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&family=Ysabeau+SC:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
   </head>
   <body>
     <header class="mx-5 text-center"><h1>Encriptador de texto</h1></header>
@@ -16,11 +16,10 @@
       <section class="container-fluid row justify-content-center align-items-center gap-2 gap-md-5 mx-0">
         <div class="container row col-lg-7 p-4 gap-1 gap-md-5 justify-content-center input-div">
           <textarea name="" id="" placeholder="Insert text here"></textarea>
-          <button class="col-10 col-md-4">ENCRIPTAR</button>
-          <button class="col-10 col-md-4">DESENCRIPTAR</button>
+          <button id="encode-button" class="col-10 col-md-4">ENCRIPTAR</button>
+          <button id="" class="col-10 col-md-4">DESENCRIPTAR</button>
         </div>
         <div class="container row col-lg-4 output-div">
-
         </div>
       </section>  
     </main>
@@ -31,5 +30,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./app/app.js"></script>
   </body>
 </html>
