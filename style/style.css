@@ -39,10 +39,10 @@ button {
   border-radius: .25rem;
   text-transform: uppercase;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 25px;
   padding-right: 25px;
-  color: #f1a94b;
+  color: #4d4f5c;
   -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
   clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
   height: 40px;
@@ -50,7 +50,7 @@ button {
   line-height: 14px;
   letter-spacing: 1.2px;
   transition: .2s .1s;
-  background-image: linear-gradient(90deg,#1e262f,#ff6b6b);
+  background-image: linear-gradient(90deg,#ff6b6bbe,#f1a94b);
   border: 0 solid;
   overflow: hidden;
 }
@@ -59,7 +59,7 @@ section div button:hover {
   cursor: pointer;
   transition: all .3s ease-in;
   transform: scale(1.05);
-	border: solid 2px #f1a94b;
+	border: solid 2px #ff6b6b;
 }
 
 footer{
@@ -67,12 +67,37 @@ footer{
 	background-color: #4d4f5c;
 	border-radius: 5px;
 }
-.output-div{
-	background-image: url(../assets/book-off.png);
+.no-result{
+	background-image: url(../assets/mood-empty.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+	background-color: #8b85c100;
+	color:#f1a94b;
+	font-size: 2em;
+	font-weight: 700;
+	font-style:italic;
+	opacity: .4;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+.result{
+	background-color: #8b85c100;
+	font-size: 2em;
+	font-weight: 700;
+	font-style:italic;
+	height: 100%;
+	color: #ff6b6b;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.hide{
+	display: none;
+}
+
 @media (width>=992px) {
 	section div {
 		height: 60%;

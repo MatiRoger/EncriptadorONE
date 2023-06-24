@@ -15,11 +15,18 @@
     <main>
       <section class="container-fluid row justify-content-center align-items-center gap-2 gap-md-5 mx-0">
         <div class="container row col-lg-7 p-4 gap-1 gap-md-5 justify-content-center input-div">
-          <textarea name="" id="" placeholder="Insert text here"></textarea>
+          <textarea name="" id="user-input" placeholder="Insert text here"></textarea>
           <button id="encode-button" class="col-10 col-md-4">ENCRIPTAR</button>
-          <button id="" class="col-10 col-md-4">DESENCRIPTAR</button>
+          <button id="decode-button" class="col-10 col-md-4">DESENCRIPTAR</button>
         </div>
-        <div class="container row col-lg-4 output-div">
+        <div id="output-div" class="container row col-lg-4 output-div">
+          <div class="no-result">
+            <p>No results found</p>
+          </div>
+          <div class="result flex-column">
+            <p class="output-text"></p>
+            <button id="copy-button" class="col-10 col-md-4">COPIAR</button>
+          </div>
         </div>
       </section>  
     </main>

@@ -1,6 +1,10 @@
+let text = document.getElementById("user-input");
+let textResult= document.querySelector(".result p");
+let noResult= document.querySelector(".no-result");
+let result=  document.querySelector(".result");
 function encriptar(){
-    let input = prompt().toLowerCase();
-    let output = '';
+		let input = text.value;
+		let output = '';
     for(let i = 0;i<input.length;i++){
       switch(input.charAt(i)){
 				case 'e': output+='enter';
@@ -17,11 +21,13 @@ function encriptar(){
 				break;
 			}
     }
-		return output;
+		textResult.textContent=output;
+		noResult.classList.add("d-none");
+		result.classList.add("d-flex");
 }
 
 function desencriptar(){
-	let input = prompt().toLowerCase();
+	let input = text.value;
 	let output = "";
 	let i=0;
 	while(i<input.length){
@@ -45,5 +51,14 @@ function desencriptar(){
 				i++;
 			}
 		}
-		return output;
+		textResult.textContent=output;
+		noResult.classList.add("d-none");
+		result.classList.add("d-flex");
 }
+function copy() {
+	navigator.clipboard.writeText(textResult.textContent);
+}
+document.getElementById("encode-button").addEventListener('click',encriptar);
+document.getElementById("decode-button").addEventListener('click',desencriptar);
+document.getElementById("copy-button").addEventListener('click',copy);
+
