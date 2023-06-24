@@ -2,10 +2,14 @@ let text = document.getElementById("user-input");
 let textResult= document.querySelector(".result p");
 let noResult= document.querySelector(".no-result");
 let result=  document.querySelector(".result");
+let buttons = document.querySelector(".input-button");
 
 text.addEventListener('input', function() {
 	var filtteredText = this.value.replace(/[^a-z\s]/g, '');
 	this.value = filtteredText;
+});
+text.addEventListener('input', function() {
+	buttons.disabled = text.value.trim().length === 0;
 });
 
 function encriptar(){
