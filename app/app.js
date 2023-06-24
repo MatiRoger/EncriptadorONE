@@ -2,6 +2,12 @@ let text = document.getElementById("user-input");
 let textResult= document.querySelector(".result p");
 let noResult= document.querySelector(".no-result");
 let result=  document.querySelector(".result");
+
+text.addEventListener('input', function() {
+	var filtteredText = this.value.replace(/[^a-z\s]/g, '');
+	this.value = filtteredText;
+});
+
 function encriptar(){
 		let input = text.value;
 		let output = '';

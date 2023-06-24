@@ -28,7 +28,6 @@ section div textarea{
 	resize: none;
 	border: none;
 	outline: none;
-
 }
 section div textarea::placeholder {
 	font-weight: bold;
@@ -54,14 +53,12 @@ button {
   border: 0 solid;
   overflow: hidden;
 }
-
 section div button:hover {
   cursor: pointer;
   transition: all .3s ease-in;
   transform: scale(1.05);
 	border: solid 2px #ff6b6b;
 }
-
 footer{
 	color: #f1a94b;
 	background-color: #4d4f5c;
@@ -85,9 +82,9 @@ footer{
 }
 .result{
 	background-color: #8b85c100;
-	font-size: 2em;
-	font-weight: 700;
-	font-style:italic;
+	font-size: 1.5em;
+	font-weight: 600;
+	font-style:oblique;
 	height: 100%;
 	color: #ff6b6b;
 	display: none;
@@ -110,5 +107,4 @@ footer{
 	.output-div{
 		height: 25%;
 	}
-
 }
