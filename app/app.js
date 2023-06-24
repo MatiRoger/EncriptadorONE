@@ -1,5 +1,5 @@
 let text = document.getElementById("user-input");
-let textResult= document.querySelector(".result p");
+let textResult= document.querySelector(".result .output-text");
 let noResult= document.querySelector(".no-result");
 let result=  document.querySelector(".result");
 

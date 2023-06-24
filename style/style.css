@@ -29,7 +29,7 @@ section div textarea{
 	border: none;
 	outline: none;
 }
-section div textarea::placeholder {
+#user-input::placeholder {
 	font-weight: bold;
 	opacity: .8;
 	color: #f1a94b;
