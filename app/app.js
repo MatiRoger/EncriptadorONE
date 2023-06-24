@@ -4,7 +4,7 @@ let noResult= document.querySelector(".no-result");
 let result=  document.querySelector(".result");
 
 text.addEventListener('input', function() {
-	var filtteredText = this.value.replace(/[^a-zA-z\s]/g, '');
+	var filtteredText = this.value.replace(/[^a-z\s]/g, '');
 	this.value = filtteredText;
 });
 
